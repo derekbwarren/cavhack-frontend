@@ -45,11 +45,18 @@ class MyProfileContainer extends Component {
           <Row className="show-grid valign-wrapper">
             <Col xs={12} md={8} lg={4}>
               {/* ADD PROFILE IMAGE HERE */}
+              <Image src="/assets/images/person-placeholder.jpg" thumbnail className="spin" />
             </Col>
             <Col xs={12} md={4} lg={8}>
               {/* ADD PAGE HEADER WITH NAME AND ABOUT ME HEADINGS HERE */}
+              <PageHeader>
+                Derek Warren
+                <br />
+                <small>About Me</small>
+              </PageHeader>
 
               {/* ADD ABOUT ME DESCRIPTION HERE */}
+              <p className="about-me spin-reverse">This is where i describe myself!!! Yay!!!</p>
 
             </Col>
           </Row>
@@ -59,6 +66,18 @@ class MyProfileContainer extends Component {
             <Col xs={12}>
 
               {/* ADD HEADER FOR SECTION HERE */}
+              <PageHeader>
+                My Interests
+              </PageHeader>
+              <Panel>
+                <Panel.Body>
+                  <ul>
+                    <li>Running</li>
+                    <li>Coding in react</li>
+                    <li>something else funny</li>
+                  </ul>
+                </Panel.Body>
+              </Panel>
 
               {/* ADD PANEL FOR SECTION INFORMATION WITH LIST HERE */}
 

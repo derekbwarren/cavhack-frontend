@@ -35,7 +35,20 @@ class AllProfilesContainer extends Component {
         <Row>
 
           {/* ADD ALL PROFILES CREATED ABOVE HERE */}
-          
+          <Col xs={6} md={4} lg={3}>
+            <Thumbnail src="/assets/images/person-placeholder.jpg">
+              <h3>FirstName LastName</h3>
+              <p>
+                <Button 
+                  bsStyle="primary" 
+                  onClick={() => this.props.history('/?user=' + 1)}
+                >
+                  View Profile
+                </Button>
+              </p>
+            </Thumbnail>
+          </Col>
+
         </Row>
       </Grid>
     )

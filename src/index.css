@@ -1,8 +1,36 @@
+.about-me {
+  font-size: 50px;
+  color: #45ea98;
+  font-weight: bold;
+  background-color: #123456;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.spin {
+  animation: spin 3s ease-in-out infinite;
+}
+.spin-reverse {
+  animation: spin-reverse 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg)}
+  100% { transform: rotate(360deg)}
+}
+@keyframes spin-reverse {
+  0% { transform: rotate(360deg)}
+  100% { transform: rotate(0deg)}
+}
+
+
+
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #fafafa;
+  background-color: #a0e3ec;
 }
 
 .padding--sm {
